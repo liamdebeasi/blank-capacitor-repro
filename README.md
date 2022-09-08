@@ -1,16 +1,8 @@
-## Created with Capacitor Create
+## Steps to reproduce issue
 
-This app was created using the `npx @capacitor/cli create` command, and comes with a very
-minimal shell for building an app.
-
-Note: unless you know what you're doing, we don't recommend using the `create` way of building an app. Instead, you'll
-likely want to create an app using your framework's tooling (such as `create-react-app`), and then *add* capacitor
-to *that* project (using `npx @capacitor/cli init`).
-
-### Running this example
-
-To run the provided example, can use serve command:
-
-```bash
-npx cap serve
-```
+1. Run app on iOS device.
+2. Turn VoiceOver on.
+3. In the app, tap into the text input. Observe that the keyboard opens.
+4. Tap something on the keyboard (such as a character key).
+5. Using 2 fingers, make a "Z" gesture on the space above the keyboard. Observe that the keyboard hides.
+6. As soon as focus is returned to the text input, swipe right to move focus to the "Hello World" link. Observe that focus is moved to the link and then moved back to the input. Observe that the keyboard opens again.
